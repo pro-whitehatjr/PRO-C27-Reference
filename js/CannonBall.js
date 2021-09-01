@@ -1,9 +1,6 @@
 class CannonBall {
   constructor(x, y) {
     var options = {
-      restitution: 0.8,
-      friction: 1.0,
-      density: 1.0,
       isStatic: true
     };
     this.r = 30;
@@ -17,7 +14,7 @@ class CannonBall {
   }
 
   animate() {
-    this.speed += 0.05 % 1.1;
+    this.speed += 0.05;
   }
 
   remove(index) {
